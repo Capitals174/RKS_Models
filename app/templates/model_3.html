@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block model_result %}
+    <div class="alert alert-dark" role="alert">
+        <h4>Доза сульфата алюминия по активной части, мг/л:</h4>
+        <h2>{{ result[0] }}</h2>
+    </div>
+    <div class="alert alert-dark" role="alert">
+        <h4>Доза перманганат калия по активной части, мг/л:</h4>
+        <h2>{{ result[1] }}</h2>
+    </div>
+    <div class="alert alert-dark" role="alert">
+        <h4>Cтоимость комбинации сульфат алюминия + известь, тыс. руб без НДС/сут.:</h4>
+        <h2>{{ result[2] }}</h2>
+    </div>
+{% endblock %}
+
