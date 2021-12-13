@@ -1,11 +1,13 @@
+import os
+
 from waitress import serve
 from flask import Flask, request, render_template, abort
 from flask_bootstrap import Bootstrap
 from models import Form1, Form2, Form3, Form4
 from config import BaseConfig
 
-HOST = '0.0.0.0'
-PORT = 8000
+HOST = os.environ.get('HOST', '0.0.0.0')
+PORT = int(os.environ.get('PORT', '8000'))
 
 app = Flask(__name__)
 app.config.from_object(BaseConfig)
