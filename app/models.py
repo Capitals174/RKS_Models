@@ -11,12 +11,12 @@ def load_model(name):
 
 
 payload_dir = Path(__file__).resolve().parent.joinpath('payload')
-line_1_OCA = load_model('line_1_OCA_ver3.sav')
-line_2_OCA = load_model('line_2_OCA_ver3.sav')
-line_2_SA = load_model('line_2_SA_ver3.sav')
-line_1_SA = load_model('line_1_SA_ver3.sav')
-line_1_SA_per = load_model('line_1_SA_per3.sav')
-line_2_SA_per = load_model('line_2_SA_per3.sav')
+line_1_OCA = load_model('line_1_OCA_ver4.sav')
+line_2_OCA = load_model('line_2_OCA_ver4.sav')
+line_2_SA = load_model('line_2_SA_ver4.sav')
+line_1_SA = load_model('line_1_SA_ver4.sav')
+line_1_SA_per = load_model('line_1_per.sav')
+line_2_SA_per = load_model('line_2_per.sav')
 
 
 class MyFloatField(FloatField):
